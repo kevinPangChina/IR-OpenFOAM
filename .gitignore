@@ -7,10 +7,10 @@ processor*
 ![0-9]*.[0-9]*
 !0.org
 *.msh
-IR_OpenFOAM/**/polyMesh/*
-!IR_OpenFOAM/**/blockMeshDict
-IR_OpenFOAM/**/cellToRegion
-TR_OpenFOAM/**/extendFeatureEdgeMesh
+constant/polyMesh/*
+!constant/blockMeshDict
+constant/cellToRegion
+constant/extendFeatureEdgeMesh
 *.OpenFOAM
 *.foam
 *.obj
