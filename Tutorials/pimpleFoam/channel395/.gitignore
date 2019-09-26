@@ -1,0 +1,16 @@
+log
+*.gz
+postProcessing
+*~
+processor*
+![0-9]*
+![0-9]*.[0-9]*
+!0.org
+*.msh
+constant/polyMesh/*
+!constant/blockMeshDict
+constant/cellToRegion
+constant/extendFeatureEdgeMesh
+*.OpenFOAM
+*.foam
+*.obj
