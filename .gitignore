@@ -9,6 +9,7 @@ processor*
 !0.org
 !0.orig
 *.emsh
-constant/polyMesh/*
+constant/polyMesh/
+!constant/polyMesh/blockMeshDict
 *.OpenFoam
 *.foam
