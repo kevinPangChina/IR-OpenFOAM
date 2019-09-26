@@ -1,0 +1,14 @@
+log.*
+*.gz
+postProcessing
+dynamicCode
+*~
+processor*
+[0-9]*
+[0-9]*.[0-9]*
+!0.org
+!0.orig
+*.emsh
+constant/polyMesh/*
+*.OpenFoam
+*.foam
