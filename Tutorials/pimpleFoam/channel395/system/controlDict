@@ -29,7 +29,7 @@ deltaT          0.2;
 
 writeControl    timeStep;
 
-writeInterval   200;
+writeInterval   1000;
 
 purgeWrite      0;
 
@@ -44,6 +44,7 @@ timeFormat      general;
 timePrecision   6;
 
 runTimeModifiable true;
+libs ( "libOpenFOAM.so" "libdynamicSmagorinskyModel.so");
 
 functions
 {
@@ -70,6 +71,39 @@ functions
                 base        time;
             }
         );
+    }
+probes
+    {
+        // Where to load it from
+        functionObjectLibs ( "libsampling.so" );
+
+        type            probes;
+
+        // Name of the directory for probe data
+        name            probes;
+
+        // Write at same frequency as fields
+        outputControl   timeStep;
+        outputInterval  1;
+
+        // Fields to be probed
+        fields
+        (
+            p U 
+        );
+
+        probeLocations
+        (
+            ( 3.14 0.1 1 ) 
+            ( 3.14 0.2 1 ) 
+            ( 3.14 0.5 1 ) 
+            ( 3.14 1 1 ) 
+            ( 3.14 1.5 1 ) 
+            ( 3.14 1.8 1 ) 
+            ( 3.14 1.9 1 ) 
+
+       );
+
     }
 }
 

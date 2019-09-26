@@ -15,11 +15,11 @@ FoamFile
 }
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-LESModel        oneEqEddy;
+LESModel        dynamicSmagorinsky;
 
 printCoeffs     on;
 
-delta           vanDriest;
+delta           cubeRootVol;
 
 cubeRootVolCoeffs
 {
@@ -82,5 +82,15 @@ smoothCoeffs
     maxDeltaRatio   1.1;
 }
 
+SmagorinskyCoeffs
+{
+	ce	1.05;
+	ck	0.07;
+}
+dynamicSmagorinskyCoeffs
+{
+	filter	simple;
+	ce	1.048;
+}
 
 // ************************************************************************* //
