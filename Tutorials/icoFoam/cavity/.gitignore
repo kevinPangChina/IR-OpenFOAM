@@ -4,8 +4,6 @@ postProcessing
 dynamicCode
 *~
 processor*
-!0.org
-!0.orig
 *.emsh
 constant/polyMesh/
 !constant/polyMesh/blockMeshDict
