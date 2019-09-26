@@ -1,8 +1,8 @@
 log
 *.gz
-IR_OpenFOAM/**/postProcessing/
+postProcessing/
 *~
-IR_OpenFOAM/**/processor*
+processor*/
 ![0-9]*
 ![0-9]*.[0-9]*
 !0.org
